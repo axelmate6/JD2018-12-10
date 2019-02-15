@@ -17,7 +17,7 @@ public class ConsoleRunner {
                 result = parcer.calc(expression);
                 printer.print(result);
             } catch (CalcException e) {
-                printer.showError(e);
+                System.out.println(e.getMessage());
             }
         }
         Var.saveVarToFile();

@@ -1,7 +1,5 @@
 package by.it.kushnerov.jd01_12;
 
-import by.it.dziomin.jd01_03.InOut;
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://jd02.kushnerov.by.it/somestring+att"
+        xmlns:tag="http://jd02.kushnerov.by.it/somestring+att"
+        elementFormDefault="qualified"
+>
+<element name="users" >
+    <complexType>
+        <sequence>
+            <element
+                    name="client"
+                    type="tag:Client"
+                    minOccurs="0"
+                    maxOccurs="unbounded" >
+            </element>
+        </sequence>
+    </complexType>
+</element>
+
+<complexType name="Client">
+    <sequence>
+        <element name="login" type="ID" />
+        <element name="email" type="string" />
+        <element name="password" type="string" />
+        <element name="name" type="string"/>
+        <element name="surname" type="string"/>
+        <element name="phone" type="int"/>
+        <element name="creditcard" type="int"/>
+        <element name="bookings"  type="tag:Bookings"/>
+    </sequence>
+    <attribute name="nickname" type="string" use="required"/>
+</complexType>
+
+<complexType name="Bookings">
+    <sequence>
+        <element name="booking"
+                 minOccurs="0"
+                 maxOccurs="unbounded"
+                 type="tag:Booking"/>
+    </sequence>
+    <attribute name="max" type="positiveInteger" use="required"/>
+</complexType>
+
+<complexType name="Booking">
+    <sequence>
+        <element name="description" type="string"/>
+        <element name="floor" type="integer"/>
+        <element name="rooms" type="positiveInteger"/>
+        <element name="days" type="positiveInteger"/>
+        <element name="price" type="double"/>
+    </sequence>
+</complexType>
+
+<complexType name="Price">
+    <simpleContent>
+        <restriction base="double">
+            <attribute name="currency" type="string"/>
+        </restriction>
+    </simpleContent>
+</complexType>
+
+
+</schema>

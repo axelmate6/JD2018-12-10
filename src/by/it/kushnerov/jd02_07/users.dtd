@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!ELEMENT users (client)+>
+<!ELEMENT client (login,email,password,name,surname,phone,creditcard,booking)>
+<!ELEMENT login (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT creditcard (#PCDATA)>
+<!ELEMENT bookings (booking)+>
+<!ELEMENT booking (
+        description, floor, rooms, days, price)>
+        <!ELEMENT description (#PCDATA)>
+        <!ELEMENT floor (#PCDATA)>
+        <!ELEMENT rooms (#PCDATA)>
+        <!ELEMENT days (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>

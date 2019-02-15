@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users>
+    <client>
+        <login>yaPauk</login>
+        <email>yapauk@mail.ru</email>
+        <password>11111</password>
+        <name>Anatoliy</name>
+        <surname>Metzengendler</surname>
+        <phone>180011111</phone>
+        <creditcard>1234567890</creditcard>
+        <bookings>
+            <booking>
+                <description>
+                    Apartments for family with kids
+                </description>
+                <floor>5</floor>
+                <rooms>4</rooms>
+                <days>14</days>
+                <price>10000.0</price>
+            </booking>
+        </bookings>
+    </client>
+    <client>
+        <login>b0$$</login>
+        <email>b0ss@mail.com</email>
+        <password>aaaaaaa</password>
+        <name>Chance</name>
+        <surname>Morris</surname>
+        <phone>1800133769</phone>
+        <creditcard>0987654321</creditcard>
+        <bookings>
+            <booking>
+                <description>
+                    Apartments near the restaurant
+                </description>
+                <floor>1</floor>
+                <rooms>2</rooms>
+                <days>3</days>
+                <price>4666.1</price>
+            </booking>
+        </bookings>
+    </client>
+</users>
